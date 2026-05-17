@@ -69,7 +69,7 @@ export default function TaskFormPage() {
               type="text"
               placeholder="Enter task title"
               {...register("title", { required: true })}
-              className={`border ${errors.title ? "border-red-400" : "border-gray-300"} rounded-lg px-4 py-2 w-full focus:outline-none focus:ring-2 focus:ring-green-400 transition`}
+              className={`border ${errors.title ? "border-red-400" : "border-gray-300"} rounded-lg px-4 py-2 w-full text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-green-400 transition`}
               autoFocus
             />
             {errors.title && <span className="text-red-500 text-xs mt-1">This field is required</span>}
@@ -82,7 +82,7 @@ export default function TaskFormPage() {
               id="description"
               placeholder="Enter task description"
               {...register("description", { required: true })}
-              className={`border ${errors.description ? "border-red-400" : "border-gray-300"} rounded-lg px-4 py-2 w-full focus:outline-none focus:ring-2 focus:ring-green-400 transition resize-none`}
+              className={`border ${errors.description ? "border-red-400" : "border-gray-300"} rounded-lg px-4 py-2 w-full text-gray-900 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-green-400 transition resize-none`}
               rows={5}
             ></textarea>
             {errors.description && <span className="text-red-500 text-xs mt-1">This field is required</span>}
